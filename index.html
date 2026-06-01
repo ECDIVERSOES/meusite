@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Planície Diversões - Em breve, o melhor em entretenimento e diversão. Entre em contato conosco pelas redes sociais, WhatsApp e telefone. Site em desenvolvimento.">
+    <meta name="description" content="Planície Diversões - Entretenimento e diversão. Em breve, um mundo de alegria. Entre em contato conosco.">
     <meta name="author" content="Planície Diversões - EC Locações">
     <meta name="theme-color" content="#0d3188">
     <title>Planície Diversões | Em Desenvolvimento</title>
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
@@ -94,6 +95,30 @@
             border-bottom: 2px solid #ffd966;
             display: inline-block;
             padding-bottom: 6px;
+        }
+
+        .email {
+            margin-top: 1.4rem;
+            font-size: 1.3rem;
+            background: rgba(255,255,255,0.08);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            backdrop-filter: blur(4px);
+            transition: 0.2s;
+        }
+        .email a {
+            color: #FFE99C;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .email a:hover {
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
 
         .telefone {
@@ -209,6 +234,12 @@
             .titulo {
                 font-size: 1.4rem;
             }
+            .email {
+                font-size: 0.9rem;
+                padding: 0.4rem 1rem;
+                gap: 6px;
+                flex-wrap: wrap;
+            }
             .telefone {
                 font-size: 1.2rem;
                 gap: 0.5rem;
@@ -269,6 +300,14 @@
         📞 CONTATO
     </div>
 
+    <!-- E-mail: visual mostra contato@planiciediversoes.com, mas envia para esiocosta16@gmail.com -->
+    <div class="email">
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:esiocosta16@gmail.com" target="_blank" rel="noopener noreferrer">
+            contato@planiciediversoes.com
+        </a>
+    </div>
+
     <div class="telefone">
         <a href="tel:+5522996112625" class="telefone-link" aria-label="Ligar agora" rel="noopener">
             <i class="fa-solid fa-phone"></i>
@@ -301,10 +340,6 @@
         CNPJ: 46.293.129/0001-36<br>
         <span style="font-size: 0.7rem; opacity: 0.7;">
             <i class="fa-regular fa-copyright"></i> 2026 Planície Diversões • Todos os direitos reservados
-        </span>
-        <br>
-        <span style="display: inline-block; margin-top: 6px; font-size: 0.65rem; background: rgba(0,0,0,0.3); padding: 2px 10px; border-radius: 30px;">
-            🌐 GitHub Pages • Em breve novidades
         </span>
     </div>
 </div>
